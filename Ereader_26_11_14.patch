@@ -27,7 +27,8 @@ Index: application/controllers/request.php
 -			/*With this API comment info is stored */
 +			/*With this API comment info is stored in database*/
  			
- 			case 'comment':
+ 			case 'comment jhvjhvhhvhjv jhvkdbcccccccccccccccccccccccccc
+dcndkncdlkcn
  			{
 @@ -67,7 +67,7 @@
  				break;
