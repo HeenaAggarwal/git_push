@@ -1,0 +1,62 @@
+Index: application/controllers/request.php
+===================================================================
+--- application/controllers/request.php	(revision 171)
++++ application/controllers/request.php	(working copy)
+@@ -30,7 +30,7 @@
+ 		
+ 		switch($method)
+ 		{
+-			/*With this API user are able to login in Ereader*/
++			/*With this API user are able to login in Ereader */
+ 			
+ 			case 'login_user':
+ 			{				
+@@ -41,7 +41,7 @@
+ 				break;
+ 			}
+ 			
+-			/*With this API read info is stored*/
++			/*With this API read info is stored */
+ 									
+ 			case 'book_read':
+ 			{				
+@@ -53,7 +53,7 @@
+ 				break;
+ 			}
+ 			
+-			/*With this API comment info is stored */
++			/*With this API comment info is stored in database*/
+ 			
+ 			case 'comment':
+ 			{
+@@ -67,7 +67,7 @@
+ 				break;
+ 			}
+ 			
+-			/* With this API book added info is stored*/
++			/* With this API book added info is stored */
+ 			
+ 			case 'insert_book_details':
+ 			{
+@@ -94,7 +94,7 @@
+ 				break;
+ 			}
+ 			
+-			/*With this API user can view all the books*/
++			/*With this API user can view all the books on the home page*/
+ 			
+ 			case 'home_details1':
+ 			{
+Index: application/models/user.php
+===================================================================
+--- application/models/user.php	(revision 171)
++++ application/models/user.php	(working copy)
+@@ -256,7 +256,7 @@
+       
+ 	}
+ 		
+-	/* With this API book added info is stored*/
++	/* With this API info is stored about the book that is added by the user */
+ 	
+ 	function insert_book_details($user_id, $book_folder, $book_title ,$book_description, $category1, $category2, $note,$url, $images, $status)
+ 	{
